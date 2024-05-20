@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AutomationPrezentare"
+           tests="3"
+           failures="1"
+           errors="0"
+           skipped="2"
+           time="0.092">
+    <properties></properties>
+
+            <testcase
+                name="configureAppium"
+                time="0.092"
+                classname="com.assist.automate_tests.dashboard.Navigation">
+
+            <failure type="io.appium.java_client.service.local.InvalidServerInstanceException" message="The main Appium script does not exist at &apos;D:\Project_AutomationWithAppium\AutomationPrezentare\mvn &apos;">
+                <![CDATA[io.appium.java_client.service.local.InvalidServerInstanceException: The main Appium script does not exist at 'D:\Project_AutomationWithAppium\AutomationPrezentare\mvn '
+                io.appium.java_client.service.local.AppiumServiceBuilder.validatePath(AppiumServiceBuilder.java:131)io.appium.java_client.service.local.AppiumServiceBuilder.loadPathToMainScript(AppiumServiceBuilder.java:294)io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:361)io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:60)org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:457)com.assist.automate_tests.test_launcher.Base.RunAppiumServer(Base.java:43)com.assist.automate_tests.test_launcher.Base.configureAppium(Base.java:20)java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)java.base/java.lang.reflect.Method.invoke(Method.java:580)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)java.base/java.util.ArrayList.forEach(ArrayList.java:1596)org.testng.TestRunner.privateRun(TestRunner.java:806)org.testng.TestRunner.run(TestRunner.java:601)org.testng.SuiteRunner.runTest(SuiteRunner.java:433)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)org.testng.SuiteRunner.run(SuiteRunner.java:330)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)org.testng.TestNG.runSuitesLocally(TestNG.java:1176)org.testng.TestNG.runSuites(TestNG.java:1099)org.testng.TestNG.run(TestNG.java:1067)com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </failure>
+    </testcase>
+
+            <testcase
+                name="tearDown"
+                time="0.0"
+                classname="com.assist.automate_tests.dashboard.Navigation">
+            </testcase>
+            <testcase
+                name="CheckFunctionalityOfApplicationNavigation"
+                time="0.0"
+                classname="com.assist.automate_tests.dashboard.Navigation">
+            </testcase>
+
+</testsuite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AutomationPrezentare"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="8.899">
+    <properties></properties>
+
+
+
+            <testcase
+                name="checkIfAllButtonsAreDisplayed"
+                time="3.582"
+                classname="com.assist.automate_tests.dashboard.Dashboard">
+            </testcase>
+            <testcase
+                name="checkDashboardTextsAreDisplayed"
+                time="5.317"
+                classname="com.assist.automate_tests.dashboard.Dashboard">
+            </testcase>
+</testsuite>

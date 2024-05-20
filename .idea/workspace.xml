@@ -4,18 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9df31e4-bc2b-43db-ab12-405c5f0e8977" name="Changes" comment="" />
+    <list default="true" id="a9df31e4-bc2b-43db-ab12-405c5f0e8977" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/constant/CommonConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/constant/forYouScreenConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/helpers/Verifyer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/utils/ConfigLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/utils/ExtentReportManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/assist/automate_tests/Dashboard/Navigation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/assist/automate_tests/test_launcher/Base.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/env/ForYou.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/assist/automate_tests/Dashboard/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assist/automate_tests/Dashboard/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/assist/automate_tests/TestLauncher/Base.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/assist/automate_tests/TestLauncher/ConfigLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/assist/helpers/ExtentReportManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/startup_data/appiumConfiguraiton.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/startup_data/appiumConfiguraiton.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2gOwXBkBryj3cQXXWHdRcXqXKxx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -27,10 +57,72 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "TestNG.Dashboard.executor": "Run",
+    "TestNG.Navigation.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Project_AutomationWithAppium/AutomationPrezentare/pom.xml",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.6169725",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project_AutomationWithAppium\AutomationPrezentare\test-output" />
+      <recent name="D:\Project_AutomationWithAppium\AutomationPrezentare\src\test\java\com\assist\automate_tests\dashboard" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.Dashboard">
+    <configuration name="Dashboard" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationPrezentare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assist.automate_tests.dashboard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assist.automate_tests.dashboard" />
+      <option name="MAIN_CLASS_NAME" value="com.assist.automate_tests.dashboard.Dashboard" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Navigation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationPrezentare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assist.automate_tests.Navigation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assist.automate_tests.Navigation" />
+      <option name="MAIN_CLASS_NAME" value="com.assist.automate_tests.Navigation.Navigation" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.Dashboard" />
+        <item itemvalue="TestNG.Navigation" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
