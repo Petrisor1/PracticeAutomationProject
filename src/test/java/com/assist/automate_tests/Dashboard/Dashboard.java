@@ -1,13 +1,18 @@
 package com.assist.automate_tests.dashboard;
 import io.appium.java_client.AppiumBy;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 import common.utils.ExtentReportManager;
 import com.assist.automate_tests.test_launcher.*;
 import com.aventstack.extentreports.*;
 import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.PointerInput;
+import org.openqa.selenium.interactions.Sequence;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+import java.util.Arrays;
 import java.util.List;
 
 import static common.constant.forYouScreenConstants.*;
@@ -64,7 +69,35 @@ public class Dashboard extends Base{
         }
     }
 
+    @Test(priority = 3)
+    private void checkIfUserIsAbleToSwipeRight()
+    {
+        ExtentTest test = ExtentReportManager.createTest("Check if user si able to swipe",
+                "Check application behavior while user is swiping through sections").assignCategory(category);
+        try {
 
+            final var finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
+            var start = new Point(994, 968);
+            var end = new Point(654, 972);
+            var swipe = new Sequence(finger, 1);
+            swipe.addAction(finger.createPointerMove(Duration.ofMillis(0),
+                    PointerInput.Origin.viewport(), start.getX(), start.getY()));
+            swipe.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+            swipe.addAction(finger.createPointerMove(Duration.ofMillis(1000),
+                    PointerInput.Origin.viewport(), end.getX(), end.getY()));
+            swipe.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+            driver.perform(Arrays.asList(swipe));
+
+        }
+        catch (Exception e)
+        {
+            test.log(Status.FAIL, "Test failed " + e.getMessage());
+
+        }
+        finally {
+            ExtentReportManager.flush();
+        }
+    }
 
 
 }

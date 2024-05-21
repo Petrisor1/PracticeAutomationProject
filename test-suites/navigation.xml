@@ -1,0 +1,7 @@
+<suite name="Services suite">
+    <test name="Services">
+        <classes>
+            <class name="com.assist.automate_tests.settings.Settings" >   </class>
+        </classes>
+    </test>
+</suite>

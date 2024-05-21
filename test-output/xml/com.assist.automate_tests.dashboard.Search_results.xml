@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Services"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="6.284">
+    <properties></properties>
+
+
+
+            <testcase
+                name="checkIfRecentSearchesAreDisplayed"
+                time="1.054"
+                classname="com.assist.automate_tests.dashboard.Search">
+            </testcase>
+            <testcase
+                name="CheckIfUserIsAbleToSearchAtopic"
+                time="4.794"
+                classname="com.assist.automate_tests.dashboard.Search">
+            </testcase>
+            <testcase
+                name="noResultsWork"
+                time="0.436"
+                classname="com.assist.automate_tests.dashboard.Search">
+            </testcase>
+</testsuite>

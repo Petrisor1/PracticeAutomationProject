@@ -1,4 +1,4 @@
-package com.assist.automate_tests.Navigation;
+package com.assist.automate_tests.dashboard;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import io.appium.java_client.AppiumBy;
@@ -23,15 +23,18 @@ public class Navigation extends Base {
         ExtentTest test = ExtentReportManager.createTest("Navigation check",
                 "Check if user is able to change navigate through screens").assignCategory(category);
         try {
-            List<WebElement> nabigationButtons= driver.findElements(AppiumBy.xpath("//android.view.View[@resource-id=\"NiaBottomBar\"]/android.view.View"));
+            List<WebElement> nabigationButtons= driver.findElements(AppiumBy.xpath("//android.view.View[@resource-id=\"NiaBottomBar\"]/android.view.View/android.view.View"));
+
+            test.log(Status.INFO, "Buttons found: " + nabigationButtons );
+            test.log(Status.INFO, "NumberOfButtons: " + nabigationButtons.size() );
             int i=0;
-            for(WebElement elem:nabigationButtons){
-                elem.click();
-                test.log(Status.INFO,"Elementul cautat: " + elem);
+            for(WebElement button:nabigationButtons){
+                button.click();
+                test.log(Status.INFO,"Elementul cautat: " + button);
                 boolean noLongerDisplayed=
                         CheckIfSpecificElementIsNoLongerDisplayed(driver,"(//android.widget.TextView[@text='"+screensNames[i]+"'])[1]");
-
-                Assert.assertTrue(noLongerDisplayed,"The element "+ elem + " is still displayed");
+                test.log(Status.INFO,"No longerDisplayed: "+noLongerDisplayed);
+                Assert.assertFalse(noLongerDisplayed,"The button "+ button + " is still displayed");
                 i++;
             }
         }
@@ -43,6 +46,4 @@ public class Navigation extends Base {
             ExtentReportManager.flush();
         }
     }
-
-
 }

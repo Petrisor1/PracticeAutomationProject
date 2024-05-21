@@ -15,7 +15,7 @@ public class ExtentReportManager {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy_MM_dd-" +
                     "HH_mm_ss");
             String formattedDateTime = currentDateTime.format(formatter);
-            String fileName="test-output/ExtentReport"+formattedDateTime+".html";
+            String fileName="test-results/ExtentReport"+formattedDateTime+".html";
             extent = new ExtentReports();
             ExtentSparkReporter sparkReporter = new ExtentSparkReporter(fileName);
             extent.attachReporter(sparkReporter);
