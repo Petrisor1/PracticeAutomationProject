@@ -1,4 +1,4 @@
-package com.assist.automate_tests.dashboard;
+package com.assist.automate_tests.search;
 import com.assist.automate_tests.test_launcher.Base;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -10,7 +10,8 @@ import org.testng.annotations.Test;
 import common.helpers.Actions.*;
 public class Search extends Base {
     private String section="Search";
-    @Test(priority = 1)
+
+    @Test(priority = 1, groups = {"regression"})
     public void CheckIfUserIsAbleToSearchAtopic() {
         ExtentTest test = ExtentReportManager.createTest("Check search functionality",
                 "Check if user is able to search for a specific topic")
@@ -31,13 +32,13 @@ public class Search extends Base {
 
     } catch(Exception e)
     {
-        test.log(Status.FAIL,"User is not able to perform a search");
+        test.log(Status.FAIL,"User is not able to perform a search"+ e.getMessage());
     } finally {
             ExtentReportManager.flush();
         }
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, groups = {"regression"})
     public void checkIfRecentSearchesAreDisplayed() {
         ExtentTest test = ExtentReportManager.createTest("Recent searches are displayed",
                 "Check if user is able to search for a specific section")
@@ -56,7 +57,7 @@ public class Search extends Base {
 
         } catch(Exception e)
         {
-            test.log(Status.FAIL,"Recent searches are not displayed");
+            test.log(Status.FAIL,"Recent searches are not displayed"+ e.getMessage());
         } finally {
             ExtentReportManager.flush();
         }

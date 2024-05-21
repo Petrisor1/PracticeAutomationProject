@@ -20,10 +20,9 @@ import static common.constant.forYouScreenConstants.*;
 public class Dashboard extends Base{
     private String category= "Dashboard";
 
-    @Test(priority = 1)
+    @Test(priority = 1, groups = {"smoke"})
     private void checkDashboardTextsAreDisplayed()
     {
-
         String[] textsToCheck={TITLE, SUBTITLE, EXPLANATIONS};
         ExtentTest test = ExtentReportManager.createTest("CheckPrivaceYearIsDisplayed",
                 "C23315 Check if privacy policy year is displayed").assignCategory(category);
@@ -46,7 +45,7 @@ public class Dashboard extends Base{
         }
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, groups={"smoke"})
     private void checkIfAllButtonsAreDisplayed()
     {
         ExtentTest test = ExtentReportManager.createTest("Check if buttons main buttons are displayed",
@@ -69,7 +68,7 @@ public class Dashboard extends Base{
         }
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3, groups = {"smoke"})
     private void checkIfUserIsAbleToSwipeRight()
     {
         ExtentTest test = ExtentReportManager.createTest("Check if user si able to swipe",

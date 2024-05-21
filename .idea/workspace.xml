@@ -5,22 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9df31e4-bc2b-43db-ab12-405c5f0e8977" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/helpers/Actions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/assist/automate_tests/Dashboard/Search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/assist/automate_tests/settings/Settings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-suites/navigation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-suites/regressionSuites.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-suites/runAllTests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-suites/smokeSuites.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/assist/automate_tests/search/Search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-suites/search.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/utils/ExtentReportManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/utils/ExtentReportManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/assist/automate_tests/Dashboard/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assist/automate_tests/Dashboard/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/assist/automate_tests/Dashboard/Navigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assist/automate_tests/Dashboard/Navigation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/assist/automate_tests/Dashboard/Search.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/assist/automate_tests/dashboard/Navigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assist/automate_tests/dashboard/Navigation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/assist/automate_tests/settings/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assist/automate_tests/settings/Settings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/html/suite0_test0_results.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/suite0_test0_results.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/xml/com.assist.automate_tests.Dashboard.Dashboard_results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/xml/com.assist.automate_tests.Dashboard.Dashboard_results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/xml/com.assist.automate_tests.dashboard.Navigation_results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/xml/com.assist.automate_tests.dashboard.Navigation_results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-suites/testsuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-suites/dashboard.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/xml/com.assist.automate_tests.dashboard.Search_results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/xml/com.assist.automate_tests.dashboard.Search_results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-suites/dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-suites/dashboard.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-suites/navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-suites/settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-suites/runAllTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-suites/runAllTests.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +54,7 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.D:/Project_AutomationWithAppium/AutomationPrezentare/test-suites/dashboard.xml.executor": "Run",
     "TestNG.Dashboard.executor": "Run",
     "TestNG.Navigation (1).executor": "Run",
@@ -63,6 +62,7 @@
     "TestNG.Navigation.executor": "Run",
     "TestNG.Search.checkIfRecentSearchesAreDisplayed.executor": "Run",
     "TestNG.Search.executor": "Run",
+    "TestNG.Settings.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Project_AutomationWithAppium/AutomationPrezentare/pom.xml",
@@ -79,7 +79,7 @@
       <recent name="D:\Project_AutomationWithAppium\AutomationPrezentare\src\test\java\com\assist\automate_tests\dashboard" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Navigation.CheckFunctionalityOfApplicationNavigation">
+  <component name="RunManager" selected="TestNG.Settings">
     <configuration name="D:/Project_AutomationWithAppium/AutomationPrezentare/test-suites/dashboard.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationPrezentare" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/test-suites/dashboard.xml" />
@@ -90,11 +90,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Navigation (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Navigation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationPrezentare" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.assist.automate_tests.dashboard.*" />
+          <option name="PATTERN" value="com.assist.automate_tests.search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,7 +111,7 @@
       <module name="AutomationPrezentare" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.assist.automate_tests.dashboard.*" />
+          <option name="PATTERN" value="com.assist.automate_tests.search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,12 +129,12 @@
       <module name="AutomationPrezentare" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.assist.automate_tests.dashboard.*" />
+          <option name="PATTERN" value="com.assist.automate_tests.search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.assist.automate_tests.dashboard" />
-      <option name="MAIN_CLASS_NAME" value="com.assist.automate_tests.dashboard.Search" />
+      <option name="MAIN_CLASS_NAME" value="com.assist.automate_tests.search.Search" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -142,18 +142,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Search.checkIfRecentSearchesAreDisplayed" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Settings" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationPrezentare" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.assist.automate_tests.dashboard.*" />
+          <option name="PATTERN" value="com.assist.automate_tests.settings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.assist.automate_tests.dashboard" />
-      <option name="MAIN_CLASS_NAME" value="com.assist.automate_tests.dashboard.Search" />
-      <option name="METHOD_NAME" value="checkIfRecentSearchesAreDisplayed" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="com.assist.automate_tests.settings" />
+      <option name="MAIN_CLASS_NAME" value="com.assist.automate_tests.settings.Settings" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -162,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Settings" />
         <item itemvalue="TestNG.Navigation.CheckFunctionalityOfApplicationNavigation" />
         <item itemvalue="TestNG.Navigation (1)" />
         <item itemvalue="TestNG.D:/Project_AutomationWithAppium/AutomationPrezentare/test-suites/dashboard.xml" />
         <item itemvalue="TestNG.Search" />
-        <item itemvalue="TestNG.Search.checkIfRecentSearchesAreDisplayed" />
       </list>
     </recent_temporary>
   </component>

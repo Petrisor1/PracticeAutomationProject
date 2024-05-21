@@ -1,0 +1,8 @@
+<suite name="Settings">
+    <test name="Tests related to Settings option">
+        <classes>
+            <class name="com.assist.automate_tests.search.Search" >   </class>
+
+        </classes>
+    </test>
+</suite>

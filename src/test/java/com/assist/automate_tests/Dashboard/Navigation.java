@@ -17,7 +17,7 @@ public class Navigation extends Base {
 
     public String[] screensNames={"Now in Android","Saved","Interests"};
 
-    @Test(priority=1)
+    @Test(priority=1, groups = {"smoke"})
     public void CheckFunctionalityOfApplicationNavigation()
     {
         ExtentTest test = ExtentReportManager.createTest("Navigation check",
@@ -33,7 +33,7 @@ public class Navigation extends Base {
                 test.log(Status.INFO,"Elementul cautat: " + button);
                 boolean noLongerDisplayed=
                         CheckIfSpecificElementIsNoLongerDisplayed(driver,"(//android.widget.TextView[@text='"+screensNames[i]+"'])[1]");
-                test.log(Status.INFO,"No longerDisplayed: "+noLongerDisplayed);
+                test.log(Status.INFO,"No longerDisplayed: " + noLongerDisplayed);
                 Assert.assertFalse(noLongerDisplayed,"The button "+ button + " is still displayed");
                 i++;
             }

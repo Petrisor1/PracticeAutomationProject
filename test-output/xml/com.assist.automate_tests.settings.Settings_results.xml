@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AutomationPrezentare"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.785">
+    <properties></properties>
+
+
+
+            <testcase
+                name="openAndCloseSettings"
+                time="3.785"
+                classname="com.assist.automate_tests.settings.Settings">
+            </testcase>
+</testsuite>

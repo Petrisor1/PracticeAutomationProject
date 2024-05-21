@@ -1,7 +1,7 @@
-<suite name="Services suite">
-    <test name="Services">
+<suite name="Dashboard">
+    <test name="Tests related to dashboard">
         <classes>
-            <class name="com.assist.automate_tests.dashboard.Search" >   </class>
+            <class name="com.assist.automate_tests.search.Search" >   </class>
             <class name="com.assist.automate_tests.dashboard.Dashboard"> </class>
             <class name="com.assist.automate_tests.dashboard.Navigation"> </class>
         </classes>

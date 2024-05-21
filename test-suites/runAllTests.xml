@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="All automated tests for 'New In Android' app">
+<suite name="Automated tests for Rockna Wavelight server">
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     </listeners>
     <suite-files>
-        <suite-file path="regressionSuites.xml.xml"/>
-        <suite-file path="smokeSuites.xml"/>
+        <suite-file path="dashboard.xml"/>
+        <suite-file path="search.xml"/>
+        <suite-file path="settings.xml"/>
     </suite-files>
 </suite>

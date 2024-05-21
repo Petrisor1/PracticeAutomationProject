@@ -12,16 +12,16 @@
             <testcase
                 name="checkIfRecentSearchesAreDisplayed"
                 time="1.054"
-                classname="com.assist.automate_tests.dashboard.Search">
+                classname="com.assist.automate_tests.search.Search">
             </testcase>
             <testcase
                 name="CheckIfUserIsAbleToSearchAtopic"
                 time="4.794"
-                classname="com.assist.automate_tests.dashboard.Search">
+                classname="com.assist.automate_tests.search.Search">
             </testcase>
             <testcase
                 name="noResultsWork"
                 time="0.436"
-                classname="com.assist.automate_tests.dashboard.Search">
+                classname="com.assist.automate_tests.search.Search">
             </testcase>
 </testsuite>
